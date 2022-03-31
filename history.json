@@ -1,0 +1,62 @@
+{
+  "storyOptions": [
+    ["start"],
+    ["help", "look"],
+    ["walk", "run"],
+    ["wait", "keep-running"],
+    ["laugh", "dance"],
+    ["end"]
+  ],
+  "adventure": {
+    "start": {
+      "icon": "🌲",
+      "door": "Inicio",
+      "text": "Un día como cualquiera te vas a dormir, lo siguiente que sabes es que te despertas en el medio de un bosque."
+    },
+    "look": {
+      "icon": "👀",
+      "door": "Mirar a mi alrededor.",
+      "text": "Miras a tu alrededor y ves solo árboles, plantas y hongos, Detrás de un árbol enfrente tuyo se asoma lo que parece ser una bola de pelo de 2 metros."
+    },
+    "help": {
+      "icon": "😱",
+      "door": "Pedir ayuda a los gritos.",
+      "text": "Instantáneamente entras en pánico por lo bizarro de la situación y gritas: -Aiiudaaaa. Nadie responde. Detrás de un árbol enfrente tuyo se asoma lo que parece ser una bola de pelo de 2 metros."
+    },
+    "walk": {
+      "icon": "🐌",
+      "door": "Te levantás y caminás lentamente hacia atrás.",
+      "text": "Lento y sin sacarle la mirada de encima te vas alejando de la cosa peluda. Ves que de golpe se mueve y empieza a correr hacia vos, no distinguis que es pero salis corriendo. Escuchas de golpe un grito proveniente de la cosa peluda: -Esperaaa!!"
+    },
+    "run": {
+      "icon": "🏃‍♀️",
+      "door": "Te levantás y salís corriendo.",
+      "text": "Al levantarte ves que se mueve y empieza a correr hacia vos, no distinguís que és pero salís corriendo pensando que puede ser un oso. Escuchas de golpe un grito proveniente de la cosa peluda: -Esperaaa!!"
+    },
+    "wait": {
+      "icon": "⏱",
+      "door": "Le haces caso y esperas.",
+      "text": "Paras de correr y al darte vuelta con algo de miedo ves que lo que te perseguía se detiene, te quedas sin palabras al ver que es un oso gigante con la cara de una señora muy maquillada que te dice; -Si querés llorar, llora pero estás en un sueño mi amor."
+    },
+    "keep-running": {
+      "icon": "💀",
+      "door": "Mira si voy a esperar, sigo corriendo.",
+      "text": "El miedo no deja tu cuerpo y hace bien así que seguís corriendo, sin darte cuenta te tropezas con una piedra y quedas de cara con lo que te perseguía, lo que ves es ridículo, un oso gigante con la cara de una señora muy maquillada que te dice; -Si querés llorar, llora pero estás en un sueño mi amor."
+    },
+    "laugh": {
+      "icon": "😂",
+      "door": "Me río en la cara del oso-señora.",
+      "text": "Te empezas a reir como nunca, y de una forma bastante molesta la verdad. El oso-señora se cansa de vos y te da una sólida bofetada en la cara con su brazo de 60kg que te tuerce el cuello y te despierta instantáneamente."
+    },
+    "dance": {
+      "icon": "💃",
+      "door": "Me pongo a bailar.",
+      "text": "Por alguna razón decidís ponerte a bailar, el oso-señora no entiende porqué, los animales del bosque no entienden porqué, yo que escribo esto no entiendo porqué, nadie entiende porqué. El oso-señora se cansa de tu bailecito y te da una sólida bofetada en la cara con su brazo de 60kg que te tuerce el cuello y te despierta instantáneamente."
+    },
+    "end": {
+      "icon": "👉",
+      "door": "¡Nueva Aventura!",
+      "text": "Fin."
+    }
+  }
+}

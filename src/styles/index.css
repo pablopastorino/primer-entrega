@@ -1,0 +1,230 @@
+/* --------------------------------- General -------------------------------- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --alternative-color: burlywood;
+  --shadow-color: rgba(120, 250, 0, 0.5);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1615998502836-b43488f46730?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  background-size: cover;
+}
+
+#root {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.layout {
+  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ---------------------------------- Text ---------------------------------- */
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+}
+
+/* --------------------------------- Options -------------------------------- */
+.options {
+  color: white;
+}
+
+.option {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+  align-items: center;
+}
+
+.button {
+  box-shadow: none;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  animation: animateHeart 1.3s ease 0.65s infinite normal forwards;
+  background: transparent;
+  border-color: transparent;
+  transition-property: text-shadow;
+  transition-duration: 0.3s;
+}
+
+.button#B {
+  animation: animateHeart 1.3s ease 0s infinite normal forwards;
+}
+
+.button:hover,
+.button#B:hover {
+  animation: none;
+  text-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+@keyframes animateHeart {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+    box-shadow: inset 0px 10px 0px 0px var(--shadow-color),
+      inset 10px 0px 0px 0px var(--shadow-color),
+      inset 0px -10px 0px 0px var(--shadow-color),
+      inset -10px 0px 0px 0px var(--shadow-color);
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+    box-shadow: none;
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+    box-shadow: inset 0px 10px 0px 0px var(--shadow-color),
+      inset 10px 0px 0px 0px var(--shadow-color),
+      inset 0px -10px 0px 0px var(--shadow-color),
+      inset -10px 0px 0px 0px var(--shadow-color);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+    box-shadow: none;
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+/* --------------------------------- Details -------------------------------- */
+.details {
+  color: white;
+  margin-top: 60px;
+}
+
+.details-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.details-item {
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  padding: 6px 24px;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  /* clip-path: polygon(0 0, 80% 0, 100% 50%, 81% 100%, 0 100%, 20% 50%); */
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.details-item:hover {
+  font-size: 2.4rem;
+  text-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.details-item:last-child {
+  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 20% 50%); */
+}
+
+.details-item:first-child {
+  /* clip-path: polygon(0 0, 80% 0, 100% 50%, 100% 50%, 80% 100%, 0 100%); */
+}
+
+/* ---------------------------------- Alert --------------------------------- */
+.swal2-popup {
+  background: #000000;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 50vh;
+  width: 70%;
+}
+
+#swal2-title {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ------------------------------- Animations ------------------------------- */
+.animated-text {
+  background: linear-gradient(
+    90deg,
+    #fff,
+    #fff,
+    #fff,
+    #000,
+    #fff,
+    #fff,
+    #fff,
+    #fff
+  );
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  /* background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  /* background-repeat: no-repeat; */
+  background-size: 90%;
+  animation: shine 0.1s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+/* --------------------------------- Shadow --------------------------------- */
+.shadow {
+  filter: drop-shadow(-1px 6px 3px var(--shadow-color));
+}
