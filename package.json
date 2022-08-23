@@ -1,23 +1,21 @@
 {
-  "homepage": "https://pablopastorino.github.io/primer-entrega",
-  "name": "primera-evaluacion",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "0.9.5",
-    "sweetalert2": "^11.4.7"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"homepage": "https://pablopastorino.github.io/primer-entrega",
+	"name": "primera-evaluacion",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "0.9.5",
+		"sweetalert2": "^11.4.7"
+	},
+	"devDependencies": {
+		"gh-pages": "^3.2.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	}
 }
